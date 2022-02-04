@@ -7,23 +7,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
     <!--============== UNICONS ==============-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <!--============== CSS ==============-->
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
@@ -51,8 +43,8 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                        <a href="#qualification" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Qualification
                         </a>
                     </li>
                     <li class="nav__item">
@@ -93,7 +85,7 @@
                     </div>
 
                     <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0" mask-type="alpha">
                                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
                                 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
@@ -131,30 +123,29 @@
         </section>
     </main>
 
-    <!--============== ABOUT ==============-->
+
+
+    <!--==================== ABOUT ====================-->
     <section class="about section" id="about">
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My introduction</span>
-
         <div class="about__container container grid">
-            <!-- <img src="" alt="" class="about__img"> -->
             <div class="about__data">
                 <p class="about__description">Game developer with years of practice, learning through internet and college, always looking to improve my skills.</p>
                 <div class="about__info">
                     <div>
-                        <span class="about__info-title">3+</span>
-                        <span class="about__info-name">Years<br> of experience</span>
+                        <span class="about__info-title">5</span>
+                        <span class="about__info-name">Years<br> of graduate studies</span>
+                    </div>
+                    <div>
+                        <span class="about__info-title">10+</span>
+                        <span class="about__info-name">Completed<br> projects</span>
                     </div>
                     <div>
                         <span class="about__info-title">1000+</span>
                         <span class="about__info-name">Hours <br> coding and learning</span>
                     </div>
-                    <div>
-                        <span class="about__info-title">10+</span>
-                        <span class="about__info-name">Completed <br> projects</span>
-                    </div>
                 </div>
-
                 <div class="about__buttons">
                     <a download="" href="pdf/Nathan%20Coustance.pdf" class="button button--flex">
                         Download CV<i class="uil uil-download-alt button__icon"></i>
@@ -169,7 +160,7 @@
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">My technical level</span>
 
-        <div class="skills_container container grid">
+        <div class="skills__container container grid">
             <div>
                 <!--======== SKILLS 1 ========-->
                 <div class="skills__content skills__open">
@@ -230,21 +221,21 @@
                     <div class="skills__list grid">
                         <div class="skills__data">
                             <div class="skills__titles">
-                                <h3 class="skills__name">Unreal Engine</h3>
-                                <span class="skills__number">75%</span>
+                                <h3 class="skills__name">Unity</h3>
+                                <span class="skills__number">70%</span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__unreal"></span>
+                                <span class="skills__percentage skills__unity"></span>
                             </div>
                         </div>
 
                         <div class="skills__data">
                             <div class="skills__titles">
-                                <h3 class="skills__name">Unity</h3>
-                                <span class="skills__number">60%</span>
+                                <h3 class="skills__name">Unreal Engine</h3>
+                                <span class="skills__number">65%</span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__unity"></span>
+                                <span class="skills__percentage skills__unreal"></span>
                             </div>
                         </div>
                     </div>
@@ -286,6 +277,287 @@
             </div>
         </div>
     </section>
+
+    <!--============== QUALIFICATION ==============-->
+    <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My Persional journey</span>
+        <div class="qualification__container container">
+            <div class="qualification__tabs">
+                <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                    <i class="uil uil-graduation-cap qualification__icon"></i>
+                    Education
+                </div>
+
+                <div class="qualification__button button--flex" data-target="#work">
+                    <i class="uil uil-briefcase-alt qualification__icon"></i>
+                    Work
+                </div>
+            </div>
+            <div class="qualification__sections">
+                <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                <div class="qualification__content qualification__active" data-content id="education">
+                    <!--==================== QUALIFICATION 1 ====================-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Game Development Master's Degree</h3>
+                            <span class="qualification__subtitle">Lyon 2 University</span>
+
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2020-Present
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION 2 ====================-->
+                    <div class="qualification__data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">Computer Science Bachelor's Degree</h3>
+                            <span class="qualification__subtitle">Angers University</span>
+
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2017 - 2020
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!--==================== QUALIFICATION 3 ====================-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">High School</h3>
+                            <span class="qualification__subtitle">Science <br> Computer Science optional course.</span>
+
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2014-2017
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <!-- <span class="qualification__line"></span> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                <div class="qualification__content" data-content id="work">
+                    <!--==================== QUALIFICATION 1 ====================-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Web Development Internship</h3>
+                            <span class="qualification__subtitle">Quadratus Technologies</span>
+
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                4 months - 2020
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <!-- <span class="qualification__line"></span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== PORTFOLIO ====================-->
+    <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most Recent Work</span>
+
+        <div class="portfolio__container container swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!--======================== PORTFOLIO 1 =============-->
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/tankgame.png" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Tank Game</h3>
+                        <p class="portfolio__description">
+                            Unreal Engine 3rd person game.
+                        </p>
+                        <a class="button button--flex button--small portfolio__button" onclick="togglePopup('tankgame')">
+                            Preview
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--======================== PORTFOLIO 2 =============-->
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/platformer.png" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Unity Platformer</h3>
+                        <p class="portfolio__description">
+                            2D Game made with Tilemaps.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Preview
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--======================== PORTFOLIO 3 =============-->
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/spaceminer.png" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Space Miner</h3>
+                        <p class="portfolio__description">
+                            OpenGL C++ game.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Preview
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!--============ Add Arrows =============-->
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <!--============ Add Pagination =============-->
+            <div class="swiper-pagination portfolio__pagination"></div>
+        </div>
+    </section>
+
+    <!--==================== POPUPS ====================-->
+    <div class="popup" id="tankgame" onclick="togglePopup('tankgame')">
+        <iframe id="tankgame_player" class="popup__content"
+                src="https://www.youtube.com/embed/8oMsJxhNhZ0">
+        </iframe>
+    </div>
+    <div id="backgroundDarkener"></div>
+
+    <!--==================== CONTACT ME ====================-->
+    <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+
+        <div class="contact__container container grid">
+            <div>
+                <div class="contact__information">
+                    <i class="uil uil-phone contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Call Me</h3>
+                        <span class="contact__subtitle">+33 6 32 56 21 32</span>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="uil uil-envelope contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Email</h3>
+                        <span class="contact__subtitle">n.coustance@raki.ovh</span>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="uil uil-map-marker contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__subtitle">Lyon 69007, France</span>
+                    </div>
+                </div>
+
+                <form action="https://formsubmit.co/n.coustance@raki.ovh" method="POST" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">Name</label>
+                            <input type="text" id="name" name="name" class="contact__input" required>
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" id="email" name="email" class="contact__input" required>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="message-contact" class="contact__label">Message</label>
+                        <textarea name="message" cols="0" rows="7" id="message-contact" class="contact__input" required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Nathan</h1>
+                    <span class="footer__subtitle">Game Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/nathan-coustance-07a415196/" class="footer__social" target="_blank">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.github.com/NathanRaki" target="_blank" class="footer__social">
+                        <i class="uil uil-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Nathan Coustance. all rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!--============== MAIN JS ==============-->
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>

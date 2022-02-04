@@ -51,3 +51,84 @@ function toggleSkills()
 skillsHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
+
+
+/*============== QUALIFICATION TABS ==============*/
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('qualification__active')
+        })
+        target.classList.add('qualification__active')
+
+        tabs.forEach(tab => {
+            tab.classList.remove('qualification__active')
+        })
+        tab.classList.add('qualification__active')
+
+    })
+})
+
+/*==================== SERVICES MODAL ====================*/
+const modalViews = document.querySelectorAll('.services__modal'),
+    modalBtns = document.querySelectorAll('.services__button'),
+    modalCloses = document.querySelectorAll('.services__modal-close');
+
+let modal = function (modalClick){
+    modalViews[modalClick].classList.add('active-modal');
+};
+
+modalBtns.forEach((modalBtn, i)=>{
+    modalBtn.addEventListener('click', ()=>{
+        modal(i);
+    })
+});
+
+modalCloses.forEach(modalClose => {
+    modalClose.addEventListener('click', () =>{
+        modalViews.forEach((modalView) =>{
+            modalView.classList.remove('active-modal');
+        });
+    });
+});
+
+/*==================== PORTFOLIO SWIPER  ====================*/
+var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+});
+
+/*==================== POPUPS  ====================*/
+let popupContents = document.getElementsByClassName("popup__content");
+for (let i = 0; i < popupContents.length; i++) {
+    popupContents[i].onclick = function (event) {
+        event.stopPropagation();
+    }
+}
+
+function togglePopup(name) {
+    let display = document.getElementById(name).style.display;
+    if (display == "block") {
+        const videos = document.querySelectorAll('iframe')
+        videos.forEach(i => {
+            const source = i.src
+            i.src = ''
+            i.src = source
+        })
+    }
+    document.getElementById(name).style.display = display == "none" ? "block" : "none";
+    document.getElementById('backgroundDarkener').style.display = display == "none" ? "block" : "none";
+}
