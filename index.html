@@ -131,21 +131,12 @@
         <span class="section__subtitle">My introduction</span>
         <div class="about__container container grid">
             <div class="about__data">
-                <p class="about__description">Game developer with years of practice, learning through internet and college, always looking to improve my skills.</p>
-                <div class="about__info">
-                    <div>
-                        <span class="about__info-title">5</span>
-                        <span class="about__info-name">Years<br> of graduate studies</span>
-                    </div>
-                    <div>
-                        <span class="about__info-title">10+</span>
-                        <span class="about__info-name">Completed<br> projects</span>
-                    </div>
-                    <div>
-                        <span class="about__info-title">1000+</span>
-                        <span class="about__info-name">Hours <br> coding and learning</span>
-                    </div>
-                </div>
+                <p class="about__description">
+                    Game developer with years of practice, learning through internet
+                    and college, always looking to improve my skills. One of my greatest passion is to entertain people
+                    by creating content. This is why I spend my time learning on how to create video games
+                    you'd want to play at.
+                </p>
                 <div class="about__buttons">
                     <a download="" href="pdf/Nathan%20Coustance.pdf" class="button button--flex">
                         Download CV<i class="uil uil-download-alt button__icon"></i>
@@ -154,6 +145,93 @@
             </div>
         </div>
     </section>
+
+    <!--==================== PORTFOLIO ====================-->
+    <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most Recent Work</span>
+
+        <div class="portfolio__container container swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!--======================== PORTFOLIO 1 =============-->
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/platformer.png" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Unity Platformer</h3>
+                        <p class="portfolio__description">
+                            2D Game made with Tilemaps.
+                        </p>
+                        <a class="button button--flex button--small portfolio__button" onclick="togglePopup('platformer')">
+                            Preview
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--======================== PORTFOLIO 2 =============-->
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/tankgame.png" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Tank Game</h3>
+                        <p class="portfolio__description">
+                            Unreal Engine 3rd person game.
+                        </p>
+                        <a class="button button--flex button--small portfolio__button" onclick="togglePopup('tankgame')">
+                            Preview
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--======================== PORTFOLIO 3 =============-->
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="img/spaceminer.png" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Space Miner</h3>
+                        <p class="portfolio__description">
+                            OpenGL C++ game.
+                        </p>
+                        <a class="button button--flex button--small portfolio__button" onclick="togglePopup('spaceminer')">
+                            Preview
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!--============ Add Arrows =============-->
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <!--============ Add Pagination =============-->
+            <div class="swiper-pagination portfolio__pagination"></div>
+        </div>
+    </section>
+
+    <!--==================== POPUPS ====================-->
+    <div class="popup" id="platformer" onclick="togglePopup('platformer')">
+        <iframe id="platformer_player" class="popup__content"
+                src="https://www.youtube.com/embed/4ImazjQuuyg">
+        </iframe>
+    </div>
+    <div class="popup" id="tankgame" onclick="togglePopup('tankgame')">
+        <iframe id="tankgame_player" class="popup__content"
+                src="https://www.youtube.com/embed/QscTNfHKLXY">
+        </iframe>
+    </div>
+    <div class="popup" id="spaceminer" onclick="togglePopup('spaceminer')">
+        <iframe id="spaceminer_player" class="popup__content"
+                src="https://www.youtube.com/embed/qrO8AkwHhMM">
+        </iframe>
+    </div>
+    <div id="backgroundDarkener"></div>
 
     <!--============== SKILLS ==============-->
     <section class="skills section" id="skills">
@@ -168,7 +246,7 @@
                         <i class="uil uil-brackets-curly skills__icon"></i>
                         <div>
                             <h1 class="skills__title">Coding</h1>
-                            <span class="skills__subtitle">More than 4 years</span>
+                            <span class="skills__subtitle">My main languages</span>
                         </div>
 
                         <i class="uil uil-angle-down skills__arrow"></i>
@@ -177,32 +255,40 @@
                     <div class="skills__list grid">
                         <div class="skills__data">
                             <div class="skills__titles">
-                                <h3 class="skills__name">C++</h3>
-                                <span class="skills__number">80%</span>
+                                <h3 class="skills__name">C#</h3>
+                                <span class="skills__number">My favorite</span>
                             </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__c++"></span>
+                            <div>
+                                <span class="skills__description">
+                                    I have learnt C# through Unity and is the main language I am currently using.
+                                    I know almost every advanced coding technique, however this language is very well
+                                    documented, and I have no trouble to learn features I am not aware of.
+                                </span>
                             </div>
                         </div>
 
                         <div class="skills__data">
                             <div class="skills__titles">
-                                <h3 class="skills__name">C#</h3>
-                                <span class="skills__number">70%</span>
+                                <h3 class="skills__name">C++</h3>
+                                <span class="skills__number">Language I've used most</span>
                             </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__c#"></span>
+                            <div>
+                                <span class="skills__description">
+                                    I have been working with C++ for a long time. I used it for a wide range of projects,
+                                    and I am comfortable with advanced notions including multi-threading.
+                                </span>
                             </div>
                         </div>
 
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Python</h3>
-                                <span class="skills__number">70%</span>
                             </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__python"></span>
-                            </div>
+                            <span class="skills__description">
+                                I used Python mainly for data science. I handled big datasets and analyzed them to
+                                make predictions. This is also the language I use to create web browsing bots and
+                                web-scrappers.
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -212,7 +298,7 @@
                         <i class="uil uil-window skills__icon"></i>
                         <div>
                             <h1 class="skills__title">Engines</h1>
-                            <span class="skills__subtitle">More than 4 years</span>
+                            <span class="skills__subtitle">The game engines I use</span>
                         </div>
 
                         <i class="uil uil-angle-down skills__arrow"></i>
@@ -222,21 +308,23 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Unity</h3>
-                                <span class="skills__number">70%</span>
+                                <span class="skills__number">Very comfortable with</span>
                             </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__unity"></span>
-                            </div>
+                            <span class="skills__description">
+                                This is the game engine I have most used. I worked with a lot of features such as
+                                Render Pipelines, Managers, Shaders, VFX and lot more.
+                            </span>
                         </div>
 
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Unreal Engine</h3>
-                                <span class="skills__number">65%</span>
+                                <span class="skills__number">The one I'd like to get better at</span>
                             </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__unreal"></span>
-                            </div>
+                            <span class="skills__description">
+                                It has been my first engine. I've taken a lot of Udemy courses to learn to use it. I work
+                                well with Blueprints/C++ and I'm willing to improve myself with Unreal.
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -246,7 +334,6 @@
                         <i class="uil uil-brightness-empty skills__icon"></i>
                         <div>
                             <h1 class="skills__title">Others</h1>
-                            <span class="skills__subtitle">More than 4 years</span>
                         </div>
 
                         <i class="uil uil-angle-down skills__arrow"></i>
@@ -256,21 +343,11 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">GitHub</h3>
-                                <span class="skills__number">50%</span>
                             </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__github"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">OpenGL</h3>
-                                <span class="skills__number">40%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__opengl"></span>
-                            </div>
+                            <span class="skills__description">
+                                I can work on big projects using this VCS. I know how to manage branches, to handle
+                                merges and avoid conflicts.
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -281,7 +358,7 @@
     <!--============== QUALIFICATION ==============-->
     <section class="qualification section" id="qualification">
         <h2 class="section__title">Qualification</h2>
-        <span class="section__subtitle">My Persional journey</span>
+        <span class="section__subtitle">My Personal journey</span>
         <div class="qualification__container container">
             <div class="qualification__tabs">
                 <div class="qualification__button button--flex qualification__active" data-target='#education'>
@@ -378,83 +455,6 @@
             </div>
         </div>
     </section>
-
-    <!--==================== PORTFOLIO ====================-->
-    <section class="portfolio section" id="portfolio">
-        <h2 class="section__title">Portfolio</h2>
-        <span class="section__subtitle">Most Recent Work</span>
-
-        <div class="portfolio__container container swiper mySwiper">
-            <div class="swiper-wrapper">
-                <!--======================== PORTFOLIO 1 =============-->
-                <div class="portfolio__content grid swiper-slide">
-                    <img src="img/tankgame.png" alt="" class="portfolio__img">
-
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Tank Game</h3>
-                        <p class="portfolio__description">
-                            Unreal Engine 3rd person game.
-                        </p>
-                        <a class="button button--flex button--small portfolio__button" onclick="togglePopup('tankgame')">
-                            Preview
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!--======================== PORTFOLIO 2 =============-->
-                <div class="portfolio__content grid swiper-slide">
-                    <img src="img/platformer.png" alt="" class="portfolio__img">
-
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Unity Platformer</h3>
-                        <p class="portfolio__description">
-                            2D Game made with Tilemaps.
-                        </p>
-                        <a href="#" class="button button--flex button--small portfolio__button">
-                            Preview
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!--======================== PORTFOLIO 3 =============-->
-                <div class="portfolio__content grid swiper-slide">
-                    <img src="img/spaceminer.png" alt="" class="portfolio__img">
-
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Space Miner</h3>
-                        <p class="portfolio__description">
-                            OpenGL C++ game.
-                        </p>
-                        <a href="#" class="button button--flex button--small portfolio__button">
-                            Preview
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            <!--============ Add Arrows =============-->
-            <div class="swiper-button-next">
-                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-            </div>
-            <div class="swiper-button-prev">
-                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-            </div>
-
-            <!--============ Add Pagination =============-->
-            <div class="swiper-pagination portfolio__pagination"></div>
-        </div>
-    </section>
-
-    <!--==================== POPUPS ====================-->
-    <div class="popup" id="tankgame" onclick="togglePopup('tankgame')">
-        <iframe id="tankgame_player" class="popup__content"
-                src="https://www.youtube.com/embed/8oMsJxhNhZ0">
-        </iframe>
-    </div>
-    <div id="backgroundDarkener"></div>
 
     <!--==================== CONTACT ME ====================-->
     <section class="contact section" id="contact">

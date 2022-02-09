@@ -437,8 +437,7 @@ img{
     margin-bottom: var(--mb-0-5);
 }
 .skills__name{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    font-size: var(--h3-font-size);
 }
 .skills__bar,
 .skills__percentage{
@@ -453,6 +452,12 @@ img{
     display: block;
     background-color: var(--first-color);
 }
+
+.skills__description {
+    font-size: var(--small-font-size);
+    font-weight: var(--small-font-size);
+}
+
 .skills__c\+\+{
     width: 80%;
 }
@@ -916,7 +921,7 @@ button {
     }
 
     .section{
-        padding: 6rem 0 2rem;
+        padding: 2rem 0 2rem;
     }
     .section__subtitle{
         margin-bottom: 4rem;

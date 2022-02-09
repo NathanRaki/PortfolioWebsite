@@ -121,7 +121,11 @@ for (let i = 0; i < popupContents.length; i++) {
 
 function togglePopup(name) {
     let display = document.getElementById(name).style.display;
-    if (display == "block") {
+    document.getElementById(name).style.display = display == "block" ? "none" : "block";
+    document.getElementById('backgroundDarkener').style.display = display == "block" ? "none" : "block";
+
+    display = document.getElementById(name).style.display;
+    if (display == "none") {
         const videos = document.querySelectorAll('iframe')
         videos.forEach(i => {
             const source = i.src
@@ -129,6 +133,4 @@ function togglePopup(name) {
             i.src = source
         })
     }
-    document.getElementById(name).style.display = display == "none" ? "block" : "none";
-    document.getElementById('backgroundDarkener').style.display = display == "none" ? "block" : "none";
 }
