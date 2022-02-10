@@ -150,7 +150,7 @@ img{
 }
 /*==================== LAYOUT ====================*/
 .container{
-    max-width: 768px;
+    max-width: 980px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
 }
@@ -910,7 +910,7 @@ button {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 980px) {
     .container{
         margin-left: auto;
         margin-right: auto;
